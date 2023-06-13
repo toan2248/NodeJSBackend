@@ -17,7 +17,7 @@ app.use(cors({origin: true}))
 configViewEngine(app)
 Router(app)
 
-// connectDB()
+connectDB()
 
 app.listen(port, () => {
     console.log(`Running succeed on ${port}`);

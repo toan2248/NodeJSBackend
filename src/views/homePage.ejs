@@ -8,5 +8,18 @@
 </head>
 <body>
     <h1>Hello World From Views</h1>
+    <ul>
+        <% for(let i = 0; i < data.length; i++) { %>
+            <li> 
+                <%= data[i].placeTravelID %> -
+                <%= data[i].touristName %> -
+                <%= data[i].pointOfDeparture %> -
+                <%= data[i].destination %> -
+                <%= data[i].vehicle %> -
+                <%= data[i].typeOfTourism %> -
+                <%= data[i].avatarTourist %>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>
